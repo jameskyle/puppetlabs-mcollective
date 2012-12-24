@@ -21,6 +21,8 @@ class mcollective::params {
   $mc_daemonize         = '1'
   $mc_security_provider = 'psk'
   $mc_security_psk      = 'changemeplease'
+  $mc_factsource        = 'yaml'
+  $mc_plugin_yaml       = '/etc/mcollective/facts.yaml'
 
   $nrpe_dir_real = $operatingsystem ? {
     /(?i-mx:centos|fedora|redhat|oel)/ => '/etc/nrpe.d',
